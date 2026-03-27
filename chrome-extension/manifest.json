@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "MCP Google Search",
+  "version": "1.0.0",
+  "description": "Connects to the local MCP server so Claude can search Google using your real browser — no bot detection.",
+  "permissions": ["tabs", "scripting", "alarms"],
+  "host_permissions": [
+    "http://127.0.0.1:3777/*",
+    "https://www.google.com/*",
+    "https://www.google.co.uk/*",
+    "https://www.google.com.au/*",
+    "https://www.google.ca/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

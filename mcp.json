@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "my-google-search-mcp": {
+      "command": "node",
+      "args": ["c:\\Users\\Tahir\\Desktop\\MiniProjects\\0000mcpGoogle\\dist\\bin.js"]
+    }
+  }
+}

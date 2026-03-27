@@ -1,0 +1,48 @@
+{
+  "name": "my-google-search-mcp",
+  "version": "1.0.0",
+  "description": "MCP server that searches Google via Chrome extension and filters any URL's content using an LLM. No bot detection. Works with Claude, VS Code Copilot, and any MCP client.",
+  "main": "dist/index.js",
+  "bin": {
+    "my-google-search-mcp": "./dist/bin.js"
+  },
+  "files": [
+    "dist/",
+    "chrome-extension/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/bin.js",
+    "dev": "tsx src/bin.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "google",
+    "search",
+    "chrome-extension",
+    "model-context-protocol",
+    "claude",
+    "copilot",
+    "llm",
+    "agent"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "dotenv": "^17.3.1",
+    "node-html-parser": "^7.0.2",
+    "turndown": "^7.2.2",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "@types/turndown": "^5.0.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
